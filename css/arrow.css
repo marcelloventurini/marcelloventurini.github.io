@@ -1,0 +1,13 @@
+.arrow {
+  background-image: url("../arquivosPortfolio/arrow.svg");
+  background-repeat: no-repeat;
+  height: 70px;
+  background-position: center;
+  background-size: 30px;
+}
+
+@media (max-width: 820px) {
+  .arrow {
+    display: none;
+  }
+}

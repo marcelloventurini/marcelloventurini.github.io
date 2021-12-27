@@ -1,0 +1,88 @@
+.degree {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: end; */
+  text-align: end;
+  margin: 0 auto;
+  max-width: 1600px;
+  padding: 0 5rem;
+  padding-top: 7.5rem;
+}
+
+.degree-title {
+  text-transform: uppercase;
+  font-size: 9rem;
+  line-height: 7.5rem;
+}
+
+.small-degree {
+  text-transform: uppercase;
+  font-size: 6rem;
+  line-height: 5.562rem;
+}
+
+.degree :is(h2, p) {
+  padding-bottom: 5.625rem;
+}
+
+@media (max-width: 1200px) {
+  .degree-title {
+    font-size: 6rem;
+    line-height: 4.5rem;
+  }
+
+  .small-degree {
+    font-size: 4rem;
+    line-height: 3.5rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .degree {
+    align-items: center;
+    text-align: center;
+  }
+
+  .degree :is(h2, p) {
+    padding-bottom: 3.75rem;
+  }
+  
+}
+
+@media (max-width: 600px) {
+  .degree {
+    padding-top: 7.5rem;
+  }
+
+  .degree-title {
+    font-size: 4.5rem;
+    line-height: 3.5rem;
+  }
+
+  .small-degree {
+    font-size: 3rem;
+    line-height: 2.5rem;
+  }
+
+  .degree :is(h2, p) {
+    padding-bottom: 3.75rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .degree-title {
+    font-size: 3.3rem;
+    line-height: 2.5rem;
+  }
+
+  .small-degree {
+    font-size: 2.5rem;
+    line-height: 2rem;
+  }
+}
+
+@media (max-width: 320px) {
+  /* .degree {
+    text-align: left;
+  } */
+}
