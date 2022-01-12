@@ -19,10 +19,19 @@
   text-transform: uppercase;
   font-size: 6rem;
   line-height: 5.562rem;
+  padding-top: 5.625rem;
 }
 
-.degree :is(h2, p) {
+.degree h2 {
   padding-bottom: 5.625rem;
+}
+
+.degree p:last-child {
+  padding-bottom: 5.625rem;
+}
+
+.degree p ~ p {
+  padding-bottom: 0.312rem;
 }
 
 @media (max-width: 1200px) {
@@ -42,11 +51,14 @@
     align-items: center;
     text-align: center;
   }
-
-  .degree :is(h2, p) {
+  .degree h2 {
     padding-bottom: 3.75rem;
+    padding-top: 3.75rem;
   }
   
+  .degree p:last-child {
+    padding-bottom: 3.75rem;
+  }
 }
 
 @media (max-width: 600px) {
@@ -62,10 +74,6 @@
   .small-degree {
     font-size: 3rem;
     line-height: 2.5rem;
-  }
-
-  .degree :is(h2, p) {
-    padding-bottom: 3.75rem;
   }
 }
 
